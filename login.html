@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+  <div class="section"> 
+  <div class="card">  <!-- Cambio de lugar el div con class="card" porque la card es tanto la imagen como el texto, entonces debería estar englobando todo-->
+    <div class="content-container"> <!--Agrego un div para englobar lo que sería todo el contenido de texto de la card para poder ponerle el display: flex; y flex-direction: column; para poder el contenido en vertical -->
+      <h1 class="title">Hola!</h1>
+      <h2 class="subtitle">te estábamos esperando</h2>
+
+      <form>
+        <div class="mail"> <!--Alterné el <div class="mail"> con la etiqueta <form> porque el div se abría antes que el form pero también cerraba antes, lo cual es sintácticamente incorrecto y el sistema no podía leerlo bien-->
+          <label for="label-form"> Email</label>
+          <input class="input-form" id="mail" placeholder="usuario@gmail.com" required> <!-- Fijate que en pusiste como type="input-form" y el type en este caso es type="email". La class, sin embargo, sí es class="input-form" así que te lo cambié para que CSS pueda leerlo. -->
+        </div>
+
+        <div class="password">
+          <label for="label-form"> Contraseña</label>
+          <input class="input-form" type="password" id="pass" placeholder=" ingresa tu contraseña" required> <!-- Te pasó lo mismo que en el otro input pero acá el type debería ser "password" para que aparezca con ** cuando tipeás así que te lo cambié también-->
+
+        </div>
+
+        <div class="button">
+          <button>Registrarme</button>
+          <div class="register">
+            <p>Tienes una cuenta? </p>
+            <a> Ingresa!</a>
+            <!-- Acá le habías puesto <p>, conviene poner <a> porque es un link. Y te puse todo lo que es relacionado al button dentro del mismo div. Lo que es el "Tienes una cuenta" y el "Ingresa" conviene ponerlo en un div por separado porque el display de esos dos es flex, mientras que el de todo el resto de la card es column-->
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container-img">
+
+        <img src=" https://assets-ouch.icons8.com/preview/809/b132c8e3-b3cd-4c55-9efe-5495d998bb38.png" alt="card-img">
+      </div>
+  <!--Agrego un div a la imagen porque tiene un background color que toma todo la caja pero la imagen sólo tiene un ancho de 500px y la caja es más grande porque la imagen tiene 30px de margin. Y no puedo ponerle padding porque no completa con el color y tampoco puedo agrandar la imagen porque se estira. Pongo la imagen abajo porque en realidad está a la derecha, por lo cual va primero el contenido y después la imagen-->
+  </div>
+</div> 
+</body>
+
+</html>

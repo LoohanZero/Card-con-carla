@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Signing up form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="section">
+    <div class="card">
+      <div class="img-container-mine">
+        <img src="https://assets-ouch.icons8.com/preview/511/a8fc1d6c-db5e-4530-87e4-e84ac496ebce.png"
+          alt="Mujer con llave" class="img">
+      </div>
+      <div class="content-container">
+        <div>
+          <h1 class="title">Hola!</h1>
+          <p class="subtitle">Comencemos el viaje</p>
+        </div>
+        <form>
+          <div class="username-container">
+            <label class="username" for="username">Username</label>
+            <input class="input-form" id="username" type="text" placeholder="Ingresa tu nombre de usuario" required>
+          </div>
+          <div class="mail">
+            <label class="label-form" for="email">Email</label>
+            <input class="input-form" id="username" type="email" placeholder="ejemplo@dominio.com" required>
+          </div>
+          <div class="password">
+            <label class="label-form" id="password">Contraseña</label>
+            <input class="input-form" type="password" id="password" placeholder="Ingresa tu contraseña" required>
+          </div>
+          <div class="password">
+            <label class="label-form" for="repassword">Confirmar Contraseña</label>
+            <input class="input-form" type="password" id="repassword" placeholder="Confirma tu contraseña" required>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" for="agreement">
+            <label id="agreement">Estoy de acuerdo con los <a>términos y condiciones</a></label>
+          </div>
+          <div class="button">
+            <button>Registrarme</button>
+            <div class="register">
+              <p>Tienes una cuenta? </p>
+              <a> Ingresa!</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

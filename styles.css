@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #f5f5f5;
+
+}
+.card {
+  display:flex;
+  justify-content: center;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  }
+  
+.section {
+  margin: 30px auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+}
+/*MI ESTILO*/
+.img-container-mine {
+  background-color: #EBD0D3;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
+.img {
+  width: 500px;
+  margin: 30px;
+}
+/* ESTILO DE IMAGEN DE CARLA*/
+
+img {
+  width: 500px;
+  margin: 30px;
+}
+.container-img {
+  background-color: #00D1B2;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  
+}
+
+
+.title {
+  font-size: 32px;
+  margin-top: 36px;
+  padding: 15px 0;
+   
+}
+
+.subtitle {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: normal;
+
+}
+
+
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content:flex-start;
+  width: 500px;
+  background-color: white;
+  padding: 0 40px 40px 40px;
+  box-sizing: border-box;
+}
+
+.password, .mail, .username, .username-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  }
+
+.input-form {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #DBDBDB;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input-form:hover {
+  border: 1px solid #B5B5B5;
+}
+
+.input-form:focus {
+  border: 1px solid #3273DC;
+}
+
+.input-form:invalid:not(:placeholder-shown) {
+  border: 1px solid #FF0000;
+}
+
+.input-form:valid {
+  border: 1px solid #00D1B2;
+}
+
+.checkbox-container {
+  margin: 20px 0;
+}
+
+.register {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  font-size: 14px;
+  }
+
+.register > p {
+  padding-right: 5px;
+}
+.button {
+  margin: 20px 0;
+}
+label {
+ padding: 10px 0;
+}
+button {
+  height: 40px;
+  background-color: #22D1B2;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+
+  }
+
+button:hover {
+   background-color: #00C4A7;
+    }
+
+button:active {
+      background-color: #00B89C;
+       }
+
+a {
+  color: #3273DC;
+}
+
+a:hover {
+  color: #363636;
+}
