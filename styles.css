@@ -51,7 +51,7 @@ img {
   overflow:hidden;
   
 }
-
+/*UNIFICADO*/
 
 .title {
   font-size: 32px;
@@ -78,7 +78,10 @@ img {
   box-sizing: border-box;
 }
 
-.password, .mail, .username, .username-container {
+.password, 
+.mail, 
+.username, 
+.username-container {
   display: flex;
   flex-direction: column;
   font-weight: bold;
